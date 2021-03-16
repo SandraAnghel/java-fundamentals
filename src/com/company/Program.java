@@ -4,6 +4,7 @@ import com.company.operators.ArithmeticOperators;
 import com.company.operators.AssignmentOperators;
 import com.company.operators.ComparisonOperators;
 import com.company.operators.LogicalOperators;
+import com.company.strings.StringExercises;
 
 public class Program {
     public static void main(String[] args) {
@@ -29,6 +30,9 @@ public class Program {
 
         System.out.println("-----Logical Operators-----");
         LogicalOperators.tryLogicalOperators();
+
+        System.out.println("-----Strings-----");
+        StringExercises.workWithStrings();
 
     }
 }
