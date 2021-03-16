@@ -41,5 +41,8 @@ public class Program {
         System.out.println("-----If Statements-----");
         ControlFlows.tryIfs();
 
+        System.out.println("-----Switch Statements-----");
+        ControlFlows.trySwitch();
+
     }
 }
