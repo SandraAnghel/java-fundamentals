@@ -34,5 +34,8 @@ public class Program {
         System.out.println("-----Strings-----");
         StringExercises.workWithStrings();
 
+        System.out.println("-----Maths-----");
+        Maths.tryMathMethods();
+
     }
 }
