@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.control.flows.ControlFlows;
 import com.company.operators.ArithmeticOperators;
 import com.company.operators.AssignmentOperators;
 import com.company.operators.ComparisonOperators;
@@ -36,6 +37,9 @@ public class Program {
 
         System.out.println("-----Maths-----");
         Maths.tryMathMethods();
+
+        System.out.println("-----If Statements-----");
+        ControlFlows.tryIfs();
 
     }
 }
