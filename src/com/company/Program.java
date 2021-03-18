@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.chapter2.Car;
+import com.company.chapter2.Person;
 import com.company.classes.Animal;
 import com.company.control.flows.ControlFlows;
 import com.company.operators.ArithmeticOperators;
@@ -50,5 +52,34 @@ public class Program {
 
         String animalName = Animal.name;
         Random r = new Random();
+
+        Car car = new Car();
+        System.out.println(car.name);
+
+        Car car1 = new Car("Mercedes");
+        System.out.println(car1.name);
+
+        Car car2 = new Car("Audi");
+        System.out.println(car2.name);
+
+        Car car3 = new Car("BMW", "X5");
+        System.out.println(car3.name + car3.model);
+
+        Car car4 = new Car("BMW", "X5");
+        System.out.println(car4.name + car4.model);
+
+        System.out.println(car3 == car4);
+
+        Car car5 = car4;
+        System.out.println(car4 == car5);
+
+        Person p1 = new Person("John", "Doe", 25);
+        Person p2 = new Person("Andrew", "Doe", 35);
+        p1.sayHello();
+        p2.sayHello();
+        p2.lastName = "Smith";
+        p2.sayHello();
+
+
     }
 }
