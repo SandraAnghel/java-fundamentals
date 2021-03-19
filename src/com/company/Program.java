@@ -1,7 +1,6 @@
 package com.company;
 
-import com.company.chapter2.Car;
-import com.company.chapter2.Person;
+import com.company.chapter2.*;
 import com.company.classes.Animal;
 import com.company.control.flows.ControlFlows;
 import com.company.operators.ArithmeticOperators;
@@ -79,6 +78,20 @@ public class Program {
         p2.sayHello();
         p2.lastName = "Smith";
         p2.sayHello();
+
+        Swan mother = new Swan();
+        mother.numberEggs = 1;          // set variable
+        System.out.println(mother.numberEggs);
+
+        Bird bird = new Bird();
+
+        Chick chick1 = new Chick();
+        System.out.println(chick1.name);
+
+        Egg egg = new Egg();
+        System.out.println(egg.number);
+
+        ShortAndChar.trySignedAndUnsigned();
 
 
     }
