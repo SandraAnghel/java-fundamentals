@@ -1,12 +1,12 @@
 package com.company;
 
 import com.company.chapter2.*;
+import com.company.chapter3.operators.ArithmeticOperators;
+import com.company.chapter3.operators.AssignmentOperators;
+import com.company.chapter3.operators.ComparisonOperators;
+import com.company.chapter3.operators.LogicalOperators;
 import com.company.classes.Animal;
 import com.company.control.flows.ControlFlows;
-import com.company.operators.ArithmeticOperators;
-import com.company.operators.AssignmentOperators;
-import com.company.operators.ComparisonOperators;
-import com.company.operators.LogicalOperators;
 import com.company.strings.StringExercises;
 
 import java.util.Random;
@@ -93,6 +93,53 @@ public class Program {
 
         ShortAndChar.trySignedAndUnsigned();
 
+        int a = 1;
+        System.out.println(-(-a));
 
+        short w = 14;
+        float x = 13;
+        double y = 30;
+        var z = w * x / y;
+
+        int tadpole =(int) (5 * 2L);
+
+        int wolf = 5;
+        int coyote = (wolf = 3);
+
+        boolean h = false;
+        int h1 = 5;
+        if(h = true) {
+            System.out.println("Good");
+        }
+        /*if(h1 = 6) {
+            System.out.println("Good");
+        }*/
+
+        if((h1 = 6) == 6) {
+            System.out.println("Good");
+        }
+
+        Object o = new Object();
+
+        Integer i =  Integer.valueOf(9); // new Integer()
+        Double d = Double.valueOf(8.0); // new Double()
+
+        Number num;
+        num = i; // num -> Integer
+        num = d; // num -> Double
+
+        try {
+            Casting.trySomethingWithExceptions(4);
+
+        }catch(Exception ex){
+
+            if(ex instanceof ArithmeticException){
+                System.out.println("ArithmeticException class instance - please insert valid numbers");
+            }
+
+            if(ex instanceof  NullPointerException){
+                System.out.println("NullPointerException class instance - please contact support");
+            }
+        }
     }
 }

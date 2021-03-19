@@ -1,4 +1,4 @@
-package com.company.operators;
+package com.company.chapter3.operators;
 
 public class ComparisonOperators {
 

@@ -35,4 +35,13 @@ public class Casting {
         System.out.println(c2);
 
     }
+
+    public static void trySomethingWithExceptions(int n) throws Exception {
+        if(n > 5){
+            throw new NullPointerException("NullPointerException class instance");
+        }else{
+            throw new ArithmeticException("ArithmeticException class instance");
+        }
+
+    }
 }
